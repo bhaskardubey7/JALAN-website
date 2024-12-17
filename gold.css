@@ -1,0 +1,404 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.0;
+    background-color: #f7f3f0;
+    color: #333;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Header */
+/* Header Styling */
+header 
+
+ 
+header .logo h1 
+   
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Section */
+
+/* General Reset */
+ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Header Styling */
+/* General Reset */
+ul, li, a, input, button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+}
+
+/* Header Styling */
+/* Reset */
+
+/* Floating Offer Message */
+.floating-offer {
+    position: fixed;
+    bottom: 19px;
+    right: 20px;
+    background: #d4af37; /* Elegant Gold Background */
+    padding: 20px 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    animation: slideIn 1s ease-out;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Animation for Floating Offer */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.offer-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.offer-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+.offer-btn {
+    background-color: white;
+    color: #1d1705;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 2px solid #292004;
+}
+
+.offer-btn:hover {
+    background-color: #0c4baa;
+    color: white;
+    transform: scale(1.05);
+}
+
+.offer-btn:active {
+    transform: scale(1);
+}
+
+/* Close Button (Cross Icon) */
+.close-btn {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #626cf5; /* Red color when hovered */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .floating-offer {
+        padding: 15px;
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .offer-text {
+        font-size: 1rem;
+        max-width: 200px;
+    }
+
+    .offer-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .close-btn {
+        font-size: 1.5rem;
+    }
+}
+
+body, ul, li, a, button, input {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+}
+
+/* Header */
+/* Reset */
+body, ul, li, a, button, input {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+}
+
+/* Header Styling */
+header {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center; /* Centers the logo */
+    padding: 15px;
+  }
+  
+  .logo {
+    height: 85px;  /* Adjust the logo height */
+    width: 85px;   /* Maintains aspect ratio */
+  }
+nav {
+    flex-grow: 1;
+    margin-left: 30px;
+}
+
+/* Navbar */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #007bff;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Submenu */
+.sub-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.dropdown-submenu:hover .sub-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown-menu a {
+    padding: 5px 10px;
+    display: block;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+/* Necklaces Section */
+.necklaces-section {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.necklaces-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333;
+}
+
+/* Necklace Items Grid */
+.necklaces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.necklace-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.necklace-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.necklace-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.necklace-item h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart {
+    background-color: #ffcc00;
+    color: white;
+}
+
+.add-to-cart:hover {
+    background-color: #e6b800;
+}
+
+.buy-now {
+    background-color: #333;
+    color: white;
+}
+
+.buy-now:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .necklaces-section {
+        padding: 50px 5%;
+    }
+
+    .necklaces {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .necklace-item {
+        width: 90%;
+    }
+
+    nav a {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+}

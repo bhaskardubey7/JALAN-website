@@ -1,0 +1,198 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body and Container */
+body {
+    background: linear-gradient(135deg, #fff8e1, #ffd700); /* Soft gradient with gold hints */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    background: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: slideIn 0.6s ease-out;
+}
+
+/* Animation for Slide-in */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header */
+header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+/* Purchase Summary Section */
+.purchase-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background: #f3f3f3;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.item img {
+    width: 140px;
+    height: 140px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 3px solid #ffd700; /* Premium gold border */
+}
+
+.details {
+    flex-grow: 1;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.details h2 {
+    font-size: 1.5rem;
+    color: #222;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.details .price {
+    font-size: 1.3rem;
+    color: #d4af37; /* Gold color */
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.details .quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qty-btn {
+    background-color: #d4af37; /* Gold button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.qty-btn:hover {
+    background-color: #c88e28; /* Darker gold on hover */
+}
+
+.qty-input {
+    width: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Total Price */
+.total {
+    margin-top: 25px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.total span {
+    color: #d4af37; /* Gold color */
+}
+
+/* Checkout Section */
+.checkout {
+    margin-top: 40px;
+}
+
+.checkout-btn {
+    background: #28a745;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 18px 35px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.checkout-btn:hover {
+    background: #218838;
+}
+
+.checkout-btn:active {
+    background: #1e7e34;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .purchase-summary {
+        gap: 20px;
+    }
+
+    .item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .details {
+        margin-left: 0;
+    }
+
+    .checkout-btn {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+    }
+}

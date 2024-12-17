@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Store</title>
+    <link rel="stylesheet" href="cart.css">
+     
+</head>
+<body>
+    
+   
+ <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <a href="x.jpg">
+              <img src="x.jpg" alt="Your Logo" class="logo">
+            </a>
+          </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="file:///C:/Users/vinay/Documents/JALAN%20AND%20COMPANY/.HTML">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Coins, Bars & Bullion</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a href="gold.html">Gold</a>
+                            <ul class="sub-menu">
+                                <li><a href="gold.html">Gold Coins</a></li>
+                                <li><a href="#gold-bars">Gold Bars</a></li>
+                                <li><a href="#gold-thok">Gold Thok</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="JEWEL1.HTML">Silver</a>
+                            <ul class="sub-menu">
+                                <li><a href="JEWEL1.HTML">Silver Coins</a></li>
+                                <li><a href="#silver-bars">Silver Bars</a></li>
+                                <li><a href="#silver-thok">Silver Thok</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#coloured-coins">Coloured Coins, Bars & Bullion</a></li>
+                        <li><a href="#customized-coins">Customized Colors, Bars & Bullion</a></li>
+                    </ul>
+                </li>
+                <li><a href="SHOP.HTML">Jewellery</a></li>
+                <li><a href="SHOP.HTML">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <!-- Shopping Bag Logo Section -->
+<!-- Shopping Bag Logo Section -->
+<div class="shopping-bag-container">
+    <a href="cart.html" class="shopping-bag-logo" id="shoppingBagLogo">
+        <!-- Replace with your cart logo image -->
+        <img src="cart.png" alt="Cart" id="cartLogo" />
+         
+    </a>
+</div>
+
+
+    </header>
+<body>
+    <div class="cart-container">
+        <h1 class="cart-title">Your Shopping Cart</h1>
+        <div class="cart">
+            <!-- Product 1 -->
+            <div class="cart-item" data-id="1">
+                <div class="product-img">
+                    <img src="COIN.jpg" alt="Product 1">
+                </div>
+                <div class="product-details">
+                    <h2>Gold Necklace</h2>
+                    <p class="price" data-price="1200">Rs.1200</p>
+                    <label for="quantity1">Qty:</label>
+                    <input type="number" class="quantity" id="quantity1" value="1" min="1">
+                </div>
+                <div class="remove-item">
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="cart-item" data-id="2">
+                <div class="product-img">
+                    <img src="diamo.jpg" alt="Product 2">
+                </div>
+                <div class="product-details">
+                    <h2>Diamond Earrings</h2>
+                    <p class="price" data-price="1500">Rs.1500</p>
+                    <label for="quantity2">Qty:</label>
+                    <input type="number" class="quantity" id="quantity2" value="1" min="1">
+                </div>
+                <div class="remove-item">
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+            <!-- Summary -->
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <p>Total Items: <span id="total-items">2</span></p>
+                <p>Total Price: Rs.<span id="total-price">2700</span></p>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <script src="cart.java"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Side Image Layout</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Two-side container */
+        .two-side-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap; /* Ensures responsiveness */
+        }
+
+        /* Image styling */
+        .two-side-container img {
+            width: 48%; /* Make the images take 48% of the container */
+            max-width: 500px;
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Text styling */
+        .text-content {
+            width: 48%; /* Matches the image width */
+            max-width: 500px;
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.6;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Highlight important text */
+        .text-content span {
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 768px) {
+            .two-side-container img,
+            .text-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Two-Side Layout</h1>
+    <div class="two-side-container">
+        <!-- Image on one side -->
+        <img src="https://via.placeholder.com/500" alt="Example Image">
+
+        <!-- Text content on the other side -->
+        <div class="text-content">
+            <p>
+                Discover the beauty of nature through this stunning image. 
+                Experience the vibrant colors and captivating details that bring 
+                the scenery to life. <span>Explore more</span> and let the adventure begin!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

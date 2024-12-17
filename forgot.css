@@ -1,0 +1,151 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Body Styling */
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #b76e79, #f8d7da);
+  }
+  
+  /* Forgot Password Container */
+  .forgot-container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    height: 500px;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  /* Banner Section */
+  .forgot-banner {
+    flex: 1;
+    background: linear-gradient(135deg, #b76e79, #ffe4e1);
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .forgot-banner h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .forgot-banner p {
+    font-size: 1.2rem;
+  }
+  
+  /* Form Section */
+  .forgot-form {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fdf5f5;
+  }
+  
+  .forgot-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #b76e79;
+    text-align: center;
+  }
+  
+  .forgot-form .instructions {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+    text-align: center;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    border-color: #b76e79;
+  }
+  
+  /* Forgot Button */
+  .forgot-btn {
+    background: linear-gradient(135deg, #b76e79, #f8d7da);
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .forgot-btn:hover {
+    background: linear-gradient(135deg, #f8d7da, #b76e79);
+    transform: scale(1.05);
+  }
+  
+  /* Back to Login Link */
+  .back-login {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .back-login a {
+    color: #b76e79;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .back-login a:hover {
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .forgot-container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .forgot-banner {
+      padding: 20px;
+    }
+  
+    .forgot-form {
+      padding: 20px;
+    }
+  }
+  

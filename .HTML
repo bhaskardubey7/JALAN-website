@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Store</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+     
+</head>
+<body>
+    
+   
+ <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <a href="jalaans.png">
+              <img src="jalaans.png" alt="Your Logo" class="logo">
+            </a>
+          </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="file:///C:/Users/vinay/Documents/JALAN%20AND%20COMPANY/.HTML">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Coins, Bars & Bullion</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a href="gold.html">Gold</a>
+                            <ul class="sub-menu">
+                                <li><a href="gold.html">Gold Coins</a></li>
+                                <li><a href="goldbar.html">Gold Bars</a></li>
+                                <li><a href="#gold-thok">Gold Thok</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="JEWEL1.HTML">Silver</a>
+                            <ul class="sub-menu">
+                                <li><a href="JEWEL1.HTML">Silver Coins</a></li>
+                                <li><a href="#silver-bars">Silver Bars</a></li>
+                                <li><a href="#silver-thok">Silver Thok</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#coloured-coins">Coloured Coins, Bars & Bullion</a></li>
+                        <li><a href="#customized-coins">Customized Colors, Bars & Bullion</a></li>
+                    </ul>
+                </li>
+                <li><a href="SHOP.HTML">Jewellery</a></li>
+                <li><a href="SHOP.HTML">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <!-- Shopping Bag Logo Section -->
+<!-- Shopping Bag Logo Section -->
+<div class="shopping-bag-container">
+    <a href="cart.html" class="shopping-bag-logo" id="shoppingBagLogo">
+        <!-- Replace with your cart logo image -->
+        <img src="cart.png" alt="Cart" id="cartLogo" />
+         
+    </a>
+</div>
+<div class="logo-container">
+    <a href="login.html" class="logo-container" id="shoppingBagLogo">
+        <!-- Replace with your cart logo image -->
+        <img src="login.jpg" alt="Cart" id="cartLogo" />
+         
+    </a>
+</div>
+ 
+    <!-- Filter Options (Initially Hidden) -->
+    <div class="filter-section hidden">
+        <h2>Filter Products</h2>
+        <form id="filter-form">
+            <!-- Filter by Type -->
+            <div class="filter-group">
+                <label for="type">Type:</label>
+                <select id="type" name="type">
+                    <option value="">Select Type</option>
+                    <option value="gold">Gold</option>
+                    <option value="silver">Silver</option>
+                    <option value="platinum">Platinum</option>
+                </select>
+            </div>
+
+            <!-- Filter by Weight -->
+            <div class="filter-group">
+                <label for="weight">Weight:</label>
+                <select id="weight" name="weight">
+                    <option value="">Select Weight</option>
+                    <option value="10gm">10gm</option>
+                    <option value="20gm">20gm</option>
+                    <option value="50gm">50gm</option>
+                </select>
+            </div>
+
+            <!-- Filter by Price Range -->
+            <div class="filter-group">
+                <label for="price">Price Range:</label>
+                <input type="range" id="price" name="price" min="1000" max="100000" step="1000" />
+                <span id="price-output">₹1000 - ₹100000</span>
+            </div>
+
+            <!-- Apply Button -->
+            <div class="filter-actions">
+                <button type="submit" class="btn-apply">Apply Filters</button>
+                <button type="reset" class="btn-reset">Reset Filters</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+
+    </header>
+    
+    
+    
+
+    <!-- Hero Section -->
+    <div class="image-scroller-container">
+        <div class="image-scroller">
+            <img src="HEER1.jpg" alt="Image 1">
+            <img src="HEER2.jpg" alt="Image 2">
+            <img src="banner1.webp" alt="Image 3">
+            <img src="banner2.webp" alt="Image 4">
+            <img src="banner3.webp" alt="Image 5">
+        </div>
+    </div>
+      
+      
+      
+      
+      
+    
+      
+  
+  
+
+    <!-- Products Section -->
+    <section class="products">
+        <h2 class="section-title">Our Silver Collection</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product">
+                <a href="SHOP.HTML" class="product-link">
+                    <div class="image-container">
+                        <img src="glass.jpg" alt="Product 1">
+                        <div class="overlay">
+                            <h3 class="product-title">SILVER GLASS</h3>
+                             
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <!-- Product 2 -->
+            <div class="product">
+                <a href="#" class="product-link">
+                    <div class="image-container">
+                        <img src="plateo.jpg" alt="Product 2">
+                        <div class="overlay">
+                            <h3 class="product-title">SILVER PLATE</h3>
+                             
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <!-- Product 3 -->
+            <div class="product">
+                <a href="#" class="product-link">
+                    <div class="image-container">
+                        <img src="HATRI.jpg" alt="Product 3">
+                        <div class="overlay">
+                            <h3 class="product-title">SILVER HATRI</h3>
+                             
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <!-- Add more products with respective links -->
+            <div class="product">
+                <a href="#" class="product-link">
+                    <div class="image-container">
+                        <img src="KATORI.webp" alt="Product 2">
+                        <div class="overlay">
+                            <h3 class="product-title">SILVER KATORI</h3>
+                             
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#" class="product-link">
+                    <div class="image-container">
+                        <img src="SPOON.jpg" alt="Product 2">
+                        <div class="overlay">
+                            <h3 class="product-title">SILVER SPOON</h3>
+                             
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="JEWEL1.HTML" class="product-link">
+                    <div class="image-container">
+                        <img src="COIN.jpg" alt="Product 2">
+                        <div class="overlay">
+                            <h3 class="product-title">SILVER COIN</h3>
+                             
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="products">
+        <h2 class="section-title">Our Gold Collection</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product">
+                <a href="gold.html" class="product-link">
+                    <div class="image-container">
+                        <img src="GOLD.jpeg" alt="Product 1">
+                        <div class="overlay">
+                            <h3 class="product-title">GOLD COIN</h3>
+                             
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <!-- Product 2 -->
+            <div class="product">
+                <a href="goldbar.html" class="product-link">
+                    <div class="image-container">
+                        <img src="bargold.jpg" alt="Product 2">
+                        <div class="overlay">
+                            <h3 class="product-title">Gold Buiscuit</h3>
+                             
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <!-- Product 3 -->
+            <div class="product">
+                <a href="#" class="product-link">
+                    <div class="image-container">
+                        <img src="goldjewel.jpg" alt="Product 3">
+                        <div class="overlay">
+                            <h3 class="product-title">Golden Jewelery</h3>
+                             
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <!-- Add more products with respective links -->
+             
+             
+                
+        </div>
+    </section>
+    
+    
+    <section class="collection-section">
+        <h2 class="collection-title">Our Jewelry Collections</h2>
+        <div class="collection-grid">
+            <div class="collection-item">
+                <img src="images.jpg" alt="Necklaces">
+                <div class="collection-info">
+                    <h3>Necklaces</h3>
+                    <p>Explore our elegant necklaces collection.</p>
+                </div>
+            </div>
+            <div class="collection-item">
+                <img src="images (1).jpg" alt="Rings">
+                <div class="collection-info">
+                    <h3>Rings</h3>
+                    <p>Find the perfect ring for every occasion.</p>
+                </div>
+            </div>
+            <div class="collection-item">
+                <img src="images (2).jpg" alt="Earrings">
+                <div class="collection-info">
+                    <h3>Earrings</h3>
+                    <p>Discover our exquisite earrings collection.</p>
+                </div>
+            </div>
+            <div class="collection-item">
+                <img src="images3.jpg" alt="Bracelets">
+                <div class="collection-info">
+                    <h3>Bracelets</h3>
+                    <p>Browse through our stylish bracelets collection.</p>
+                </div>
+            </div>
+            <div class="collection-item">
+                <img src="images (3).jpg" alt="Bracelets">
+                <div class="collection-info">
+                    <h3>Anklets</h3>
+                    <p>Browse through our stylish bracelets collection.</p>
+                </div>
+            </div>
+            <div class="collection-item">
+                <img src="images (4).jpg" alt="Bracelets">
+                <div class="collection-info">
+                    <h3>Bracelets</h3>
+                    <p>Browse through our stylish bracelets collection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--instagram collection-->
+    
+    <section class="instagram-collection">
+      <h1>Our Instagram Collection</h1>
+      <div class="scroller-container">
+        <div class="scroller">
+          <!-- Instagram items -->
+          <div class="scroller-item"><a href="https://www.instagram.com" target="_blank"><img src="download.jpg" alt="Instagram Image 1"></a></div>
+          <div class="scroller-item"><a href="https://www.instagram.com" target="_blank"><img src="inst2.jpg" alt="Instagram Image 2"></a></div>
+          <div class="scroller-item"><a href="https://www.instagram.com" target="_blank"><img src="inst3.jpg" alt="Instagram Image 3"></a></div>
+          <div class="scroller-item"><a href="https://www.instagram.com" target="_blank"><img src="inst4.jpg" alt="Instagram Image 4"></a></div>
+          <div class="scroller-item"><a href="https://www.instagram.com" target="_blank">
+            <img src="inst5.jpg" alt="Instagram Image 5"></a></div>
+          <!-- Add more items as needed -->
+        </div>
+      </div>
+    </section>
+
+
+    <section id="jewelry-section">
+        <!-- Customized Jewelry -->
+        <div class="jewelry-container customized">
+          <div class="jewelry-content">
+            <h2>Customized Products</h2>
+            <p>Bring your unique designs to life with our expert craftsmanship. Perfect for weddings, anniversaries, and every special occasion.</p>
+            <a href="explore.html"><button class="cta-btn">Explore More</button></a>
+          </div>
+          <div class="jewelry-image">
+            <img src="c.jpeg" alt="Customized Jewelry">
+          </div>
+        </div>
+      
+        <!-- Personalized Jewelry -->
+        <div class="jewelry-container personalized">
+          <div class="jewelry-content">
+            <h2>Personalized Jewelry</h2>
+            <p>Create meaningful pieces that tell your story. Add names, initials, or meaningful symbols to make it truly yours.</p>
+            <a href="explore.html"><button class="cta-btn">Discover Now</button>
+          </div></a>
+          <div class="jewelry-image">
+            <img src="p.jpg" alt="Personalized Jewelry">
+          </div>
+        </div>
+      </section>
+      
+    
+
+    <!-- About Section -->
+    <section class="about-us">
+      <div class="about-content">
+          <div class="about-text">
+              <strong><h2>About Us</h2></strong>
+              <p>We are A Jewelry ECommerce Platform Dedicated To Providing Exquisite Jewelry That Complements Your Personal Style. Our Commitment Is To Quality, Luxury, And Exceptional Customer Service.We Have Also Refining, Melting And More Reaction About Jewellery Is Take It Out</p>
+              <a href="about.html" class="learn-more">Learn More</a>
+          </div>
+          <div class="about-image">
+              <img src="laj.jpg" alt="Jewelry Store">
+          </div>
+      </div>
+  </section>
+  
+  <section id="why-choose-us" class="why-choose-us">
+    <div class="container">
+        <h2>Why Choose Jalan Jewellers?</h2>
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-clock"></i>
+                <h3>Best Timing</h3>
+                <p>We ensure quick turnaround times, so your orders arrive right on schedule every time.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-gem"></i>
+                <h3>Best Quality</h3>
+                <p>Only the finest materials are used in our jewelry, ensuring high quality that lasts a lifetime.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-trophy"></i>
+                <h3>Best Performance</h3>
+                <p>Our jewelry pieces are crafted with precision, guaranteeing perfect performance and longevity.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-users"></i>
+                <h3>Best Connectivity</h3>
+                <p>We offer easy communication and quick assistance to our clients at every step of their journey.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-dollar-sign"></i>
+                <h3>Affordable Budget</h3>
+                <p>We Provide High-Quality Jewelry At Prices That Fit Within Your Budget Without Compromising On Style.</p>
+            </div>
+        </div>
+    </div>
+
+      <div class="video-content">
+        <video class="video-item" autoplay muted loop playsinline>
+            <source src="Jalan Jewelry - Made with Clipchamp.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video class="video-item" autoplay muted loop playsinline>
+            <source src="Jalan Jewelry  (_SURITY WITH PURITY_) - Made with Clipchamp.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+      </div>
+    </div>
+  </section>
+  
+
+  
+        </div>
+    </section>
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+    
+        <!-- FAQ 1 -->
+        <div class="faq">
+            <input type="checkbox" id="faq1" class="faq-toggle">
+            <label for="faq1" class="faq-question">
+                What is Jalan Jewellers?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>Jalan Jewellers is an online platform offering a wide range of premium jewelry including gold, silver, and diamond collections. We are committed to providing high-quality, timeless pieces for every occasion.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ 2 -->
+        <div class="faq">
+            <input type="checkbox" id="faq2" class="faq-toggle">
+            <label for="faq2" class="faq-question">
+                How do I place an order?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>To place an order, simply select the item you want to purchase, add it to your cart, and proceed to checkout. You can pay using various methods such as credit/debit cards, UPI, or wallets like Google Pay and Paytm.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ 3 -->
+        <div class="faq">
+            <input type="checkbox" id="faq3" class="faq-toggle">
+            <label for="faq3" class="faq-question">
+                What payment methods do you accept?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>We accept credit and debit cards, UPI, net banking, and popular wallets like Google Pay, PhonePe, and Paytm.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ 4 -->
+        <div class="faq">
+            <input type="checkbox" id="faq4" class="faq-toggle">
+            <label for="faq4" class="faq-question">
+                Can I cancel my order?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>Yes, you can cancel your order within 24 hours of placing it. After that, cancellations may not be accepted depending on the shipping status.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ 5 -->
+        <div class="faq">
+            <input type="checkbox" id="faq5" class="faq-toggle">
+            <label for="faq5" class="faq-question">
+                How do I track my order?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>Once your order is dispatched, you will receive an email with the tracking details and a link to the courier website for tracking your package.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ 6 -->
+        <div class="faq">
+            <input type="checkbox" id="faq6" class="faq-toggle">
+            <label for="faq6" class="faq-question">
+                Do you offer gift cards?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>Yes, we offer digital gift cards that can be used to purchase products from our website. You can choose from a variety of denominations.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ 7 -->
+        <div class="faq">
+            <input type="checkbox" id="faq7" class="faq-toggle">
+            <label for="faq7" class="faq-question">
+                Do you offer customization on jewelry?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>Yes, we offer customization services for certain jewelry pieces. Please contact our customer service for further details and assistance.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ 8 -->
+        <div class="faq">
+            <input type="checkbox" id="faq8" class="faq-toggle">
+            <label for="faq8" class="faq-question">
+                How long does delivery take?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>Delivery time varies depending on the location, but generally, orders are delivered within 5-7 business days.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ 9 -->
+        <div class="faq">
+            <input type="checkbox" id="faq9" class="faq-toggle">
+            <label for="faq9" class="faq-question">
+                What if I receive a damaged product?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>If you receive a damaged product, please contact our customer support immediately with photos of the damage. We will guide you through the return and exchange process.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ 10 -->
+        <div class="faq">
+            <input type="checkbox" id="faq10" class="faq-toggle">
+            <label for="faq10" class="faq-question">
+                How do I return an item?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>Returns are accepted within 30 days of receiving the item, provided the product is in its original condition. You can initiate a return by contacting our support team.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ 11 -->
+        <div class="faq">
+            <input type="checkbox" id="faq11" class="faq-toggle">
+            <label for="faq11" class="faq-question">
+                Can I buy jewelry as a gift?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>Yes, you can buy jewelry as a gift. We also offer gift wrapping and personalized messages for a unique gift experience.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ 12 -->
+        <div class="faq">
+            <input type="checkbox" id="faq12" class="faq-toggle">
+            <label for="faq12" class="faq-question">
+                Is there a warranty on the jewelry?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>Yes, all our jewelry comes with a one-year warranty covering manufacturing defects. This does not cover accidental damage or wear and tear.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ 13 -->
+        <div class="faq">
+            <input type="checkbox" id="faq13" class="faq-toggle">
+            <label for="faq13" class="faq-question">
+                What are your shipping charges?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>Shipping charges depend on the delivery location. Free shipping is available on orders over ₹5,000 within India.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ 14 -->
+        <div class="faq">
+            <input type="checkbox" id="faq14" class="faq-toggle">
+            <label for="faq14" class="faq-question">
+                Can I change my shipping address after placing an order?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>You can change your shipping address within 24 hours of placing the order. After that, it might not be possible depending on the order status.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ 15 -->
+        <div class="faq">
+            <input type="checkbox" id="faq15" class="faq-toggle">
+            <label for="faq15" class="faq-question">
+                Do you offer express delivery?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>Yes, we offer express delivery at an additional cost. You can select this option during the checkout process.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ 16 -->
+        <div class="faq">
+            <input type="checkbox" id="faq16" class="faq-toggle">
+            <label for="faq16" class="faq-question">
+                Are your diamonds certified?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>Yes, all our diamonds are certified by reputed organizations such as GIA and IGI, ensuring the highest quality and authenticity.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ 17 -->
+        <div class="faq">
+            <input type="checkbox" id="faq17" class="faq-toggle">
+            <label for="faq17" class="faq-question">
+                Can I exchange a product?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>Exchanges are possible within 30 days of purchase. Please ensure that the item is in its original condition.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ 18 -->
+        <div class="faq">
+            <input type="checkbox" id="faq18" class="faq-toggle">
+            <label for="faq18" class="faq-question">
+                Do you have a physical store?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>Currently, we are an online-only store, but we are planning to open physical stores in the future. Stay tuned for updates.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ 19 -->
+        <div class="faq">
+            <input type="checkbox" id="faq19" class="faq-toggle">
+            <label for="faq19" class="faq-question">
+                How can I contact customer service?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>You can contact our customer service by emailing support@jalanjewellers.com or by calling our toll-free number 1800-123-4567.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ 20 -->
+        <div class="faq">
+            <input type="checkbox" id="faq20" class="faq-toggle">
+            <label for="faq20" class="faq-question">
+                Do you offer international shipping?
+                <span class="arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>Yes, we offer international shipping to select countries. Shipping charges and delivery time vary depending on the destination.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+       
+    </section>
+    <div class="floating-logo">
+        <a href="https://wa.me/8447782543" target="_blank">
+            <img src="download (1).jpg" alt="WhatsApp Logo">
+        </a>
+    </div>
+    
+    
+
+    <!-- Footer Section -->
+    
+
+
+
+    <div class="social-icons">
+      
+      <a href="https://www.instagram.com/" target="_blank">
+          <img src="file:///C:/Users/vinay/Documents/JALAN%20AND%20COMPANY/inst.svg">
+      </a>
+      <a href="https://www.facebook.com/" target="_blank">
+          <img src="file:///C:/Users/vinay/Documents/JALAN%20AND%20COMPANY/FACE.svg">
+      </a>
+      <a href="https://twitter.com/" target="_blank">
+          <img src="file:///C:/Users/vinay/Documents/JALAN%20AND%20COMPANY/TWIT.svg">
+      </a>
+       
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <a href="" class="logo">Jalan Jewellers</a>
+        </div>
+
+        <div class="footer-links">
+            <ul class="footer-list">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="CONTACT.HTML">Contact</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="footer-details">
+            <p>&copy; 2024 Jalan Jewellers. All Rights Reserved.</p>
+            <p>SURITY WITH PURITY</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

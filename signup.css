@@ -1,0 +1,352 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Body Styling */
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #b76e79, #f8d7da);
+  }
+  
+  /* Signup Container */
+  .signup-container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    height: 600px;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  /* Banner Section */
+  .signup-banner {
+    flex: 1;
+    background: linear-gradient(135deg, #b76e79, #ffe4e1);
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .signup-banner h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .signup-banner p {
+    font-size: 1.2rem;
+  }
+  
+  /* Signup Form Section */
+  .signup-form {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fdf5f5;
+  }
+  
+  .signup-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #b76e79;
+    text-align: center;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    border-color: #b76e79;
+  }
+  
+  /* Signup Button */
+  .signup-btn {
+    background: linear-gradient(135deg, #b76e79, #f8d7da);
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .signup-btn:hover {
+    background: linear-gradient(135deg, #f8d7da, #b76e79);
+    transform: scale(1.05);
+  }
+  
+  /* Login Link */
+  .login-link {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .login-link a {
+    color: #b76e79;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .login-link a:hover {
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .signup-container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .signup-banner {
+      padding: 20px;
+    }
+  
+    .signup-form {
+      padding: 20px;
+    }
+  }
+  /* Floating WhatsApp Logo Styles */
+.floating-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: float 3s infinite ease-in-out;
+}
+
+.floating-logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.floating-logo img:hover {
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Animation Keyframes */
+@keyframes float {
+  0%, 100% {
+      transform: translateY(-10px);
+  }
+  50% {
+      transform: translateY(10px);
+  }
+}
+
+/* Responsive Adjustment */
+@media (max-width: 768px) {
+  .floating-logo img {
+      width: 60px;
+      height: 60px;
+  }
+}
+
+
+
+/* General Footer Styling */
+.footer {
+  background-image: url('footer.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Overlay for better text readability */
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: -1;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Footer Logo */
+.footer-logo .logo {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-family: 'Georgia', serif;
+}
+
+/* Footer Links */
+.footer-links .footer-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.footer-links .footer-list li {
+  font-size: 16px;
+}
+
+.footer-links .footer-list li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-links .footer-list li a:hover {
+  color: #FFD700; /* Gold color for hover effect */
+}
+
+/* Social Media Icons */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.3);
+  color: #FFD700; /* Gold color on hover */
+}
+
+/* Footer Details */
+.footer-details p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-links .footer-list {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .footer-social {
+      gap: 15px;
+  }
+
+  .footer-details p {
+      font-size: 12px;
+  }
+}
+
+/* Styling for the social media icon */
+a img {
+  width: 100px;   /* Set the width */
+  height: 100px;  /* Set the height to maintain the aspect ratio */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+a img:hover {
+  transform: scale(1.1);  /* Slightly enlarge the icon when hovered */
+  opacity: 0.8;            /* Slightly fade the icon when hovered */
+}
+
+a img {
+  width: 100px;   /* Set the width */
+  height: 100px;  /* Set the height to maintain the aspect ratio */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+a img:hover {
+  transform: scale(1.1);  /* Slightly enlarge the icon when hovered */
+  opacity: 0.8;
+  color: #ffffff;            /* Slightly fade the icon when hovered */
+}
+
+a img {
+  width: 40px;   /* Set the width */
+  height: 40px;  /* Set the height to maintain the aspect ratio */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+a img:hover {
+  transform: scale(1.1);  /* Slightly enlarge the icon when hovered */
+  opacity: 0.1;            /* Slightly fade the icon when hovered */
+}
+
+
+a img {
+  width: 40px;   /* Set the width */
+  height: 40px;  /* Set the height to maintain the aspect ratio */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+a img:hover {
+  transform: scale(1.1);  /* Slightly enlarge the icon when hovered */
+  opacity: 0.8;            /* Slightly fade the icon when hovered */
+}
+
+
+
+
+  
